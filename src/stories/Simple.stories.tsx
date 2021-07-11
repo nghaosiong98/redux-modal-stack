@@ -29,7 +29,7 @@ const Simple: FC = () => {
 };
 
 export default {
-  title: 'Modal/Simple',
+  title: 'Modal/Basic',
   component: Simple,
   decorators: [(story) => <Provider>{story()}</Provider>],
 } as ComponentMeta<typeof Simple>;

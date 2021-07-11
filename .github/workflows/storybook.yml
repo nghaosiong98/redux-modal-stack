@@ -20,5 +20,4 @@ jobs:
         with:
           branch: main # The branch the action should deploy to.
           folder: docs-build # The folder the action should deploy.
-          clean: true
-          target_folder: docs
+          target-folder: docs

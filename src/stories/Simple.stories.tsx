@@ -29,11 +29,11 @@ const Simple: FC = () => {
 };
 
 export default {
-  title: 'Modal/Basic',
+  title: 'Modal',
   component: Simple,
   decorators: [(story) => <Provider>{story()}</Provider>],
 } as ComponentMeta<typeof Simple>;
 
 const Template: ComponentStory<typeof Simple> = (args) => <Simple {...args} />;
 
-export const Default = Template.bind({});
+export const Basic = Template.bind({});

@@ -10,8 +10,9 @@ import * as modalStackActions from '../redux/modalAction';
 const Simple: FC = () => {
   const dispatch = useDispatch();
 
-  const openModal = (payload: Modal) =>
+  function openModal<P>(payload: WrapModal<P>) {
     dispatch(modalStackActions.openModal(payload));
+  }
 
   return (
     <>

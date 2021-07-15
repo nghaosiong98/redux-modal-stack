@@ -2,7 +2,8 @@ type State = Readonly<{
   modals: ReadonlyArray<Modal>;
 }>;
 
-type Modal = {
-  Modal: React.ComponentType;
+interface WrapModal<P> {
+  Modal: React.ComponentType<P>;
   id: string;
-};
+  props?: P;
+}
